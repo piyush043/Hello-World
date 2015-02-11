@@ -20,7 +20,7 @@ import org.springframework.stereotype.Controller;
 @ComponentScan
 class HelloConfig {
 
-  @RequestMapping(Array("/"))
+  @RequestMapping(Array("/"),method=Array(RequestMethod.GET))
   @ResponseBody
   def home(): String = "Hello World!"
 
